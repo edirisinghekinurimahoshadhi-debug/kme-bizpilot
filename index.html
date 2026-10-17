@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -120,6 +119,66 @@
         </article>
       </div>
     </section>
+    
+    <!-- Authentication Section -->
+    <section class="choice-section auth-section" id="auth-panel" hidden>
+      <div class="section-label">YOUR NEXT CHAPTER</div>
+      <h2 id="auth-title">Create Your Account</h2>
+      <p class="section-description" id="auth-description">
+        Join KME BizPilot and start your journey.
+      </p>
+
+      <form id="auth-form">
+        <div id="name-field">
+          <label for="auth-name">Full Name</label>
+          <input
+            id="auth-name"
+            name="name"
+            type="text"
+            placeholder="Enter your name"
+            autocomplete="name"
+            required
+          >
+        </div>
+
+        <label for="auth-email">Email Address</label>
+        <input
+          id="auth-email"
+          name="email"
+          type="email"
+          placeholder="you@example.com"
+          autocomplete="email"
+          required
+        >
+
+        <label for="auth-password">Password</label>
+        <input
+          id="auth-password"
+          name="password"
+          type="password"
+          placeholder="At least 8 characters"
+          autocomplete="new-password"
+          minlength="8"
+          required
+        >
+
+        <button class="primary-button" id="auth-submit" type="submit">
+          Create Account ↗
+        </button>
+      </form>
+
+      <p id="auth-message" class="message" aria-live="polite"></p>
+
+      <div class="auth-line">
+        <span id="auth-switch-text">Already registered?</span>
+        <button type="button" id="auth-switch">Sign In</button>
+      </div>
+
+      <button class="card-link" type="button" id="auth-back">
+        ← Back to choices
+      </button>
+    </section>
+
   </main>
 
   <footer>
