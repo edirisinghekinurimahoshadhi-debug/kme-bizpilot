@@ -412,3 +412,141 @@ footer p, footer > span {
     scroll-behavior: auto !important;
   }
 }
+
+/* KME BizPilot — Luxury Motion Upgrade */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  animation: pageReveal 0.9s ease-out both;
+}
+
+@keyframes pageReveal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Soft golden ambient glow */
+.glow {
+  animation: goldenFloat 9s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+.glow-two {
+  animation-delay: -4s;
+}
+
+@keyframes goldenFloat {
+  from {
+    transform: translate3d(-10px, 0, 0) scale(1);
+  }
+  to {
+    transform: translate3d(18px, -16px, 0) scale(1.06);
+  }
+}
+
+/* Smooth card interactions */
+.choice-card,
+.feature {
+  transition:
+    transform 350ms ease,
+    border-color 350ms ease,
+    box-shadow 350ms ease,
+    background-color 350ms ease;
+}
+
+.choice-card:hover,
+.feature:hover {
+  transform: translateY(-7px);
+  border-color: rgba(212, 175, 55, 0.55);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
+}
+
+/* Buttons feel more responsive */
+button,
+.primary-button,
+.secondary-button,
+.card-link {
+  transition:
+    transform 250ms ease,
+    box-shadow 250ms ease,
+    color 250ms ease,
+    background-color 250ms ease;
+}
+
+button:hover,
+.primary-button:hover,
+.card-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(212, 175, 55, 0.18);
+}
+
+button:active,
+.primary-button:active,
+.card-link:active {
+  transform: scale(0.98);
+}
+
+/* Gold text refinement */
+.gold-text {
+  transition: text-shadow 350ms ease;
+}
+
+.gold-text:hover {
+  text-shadow: 0 0 22px rgba(212, 175, 55, 0.25);
+}
+
+/* Form fields */
+#auth-form input {
+  transition:
+    border-color 250ms ease,
+    box-shadow 250ms ease,
+    background-color 250ms ease;
+}
+
+#auth-form input:focus {
+  outline: none;
+  border-color: #d4af37;
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.12);
+}
+
+/* Reveal the authentication panel smoothly */
+.auth-section:not([hidden]) {
+  animation: authReveal 450ms ease-out both;
+}
+
+@keyframes authReveal {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Keyboard accessibility */
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #d4af37;
+  outline-offset: 4px;
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
