@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KME BizPilot | Build Your Business</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="glow glow-one"></div>
+  <div class="glow glow-two"></div>
+
+  <header class="navbar">
+    <a class="brand" href="#">
+      <span class="brand-icon">K</span>
+      <span>KME <span class="gold-text">BIZPILOT</span></span>
+    </a>
+
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#about">About</a>
+      <button class="nav-button" onclick="showWelcome()">Get Started ↗</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow">
+        <span class="status-dot"></span>
+        YOUR BUSINESS. YOUR FUTURE.
+      </div>
+
+      <h1>Turn Your Ideas Into<br>
+        <span class="gold-text">Something Extraordinary.</span>
+      </h1>
+
+      <p class="hero-description">
+        Your all-in-one space to build, manage, and grow your business.
+        Simple tools. Powerful possibilities.
+      </p>
+
+      <div class="hero-actions">
+        <button class="primary-button" onclick="showWelcome()">
+          Start Your Journey <span>↗</span>
+        </button>
+        <a class="secondary-button" href="#features">Explore Features ↓</a>
+      </div>
+
+      <div class="trust-line">
+        <span class="trust-star">✦</span>
+        Built for ambitious businesses and bold ideas
+      </div>
+    </section>
+
+    <section class="choice-section" id="welcome">
+      <div class="section-label">YOUR NEXT CHAPTER STARTS HERE</div>
+      <h2>What would you like to do today?</h2>
+      <p class="section-description">
+        Choose your path. We'll help you take the next step.
+      </p>
+
+      <div class="choice-grid">
+        <article class="choice-card owner-card">
+          <div class="card-icon">♙</div>
+          <span class="card-tag">BUILD & GROW</span>
+          <h3>I'm a Business Owner</h3>
+          <p>Create your shop, manage products, track orders, and grow your brand.</p>
+          <button class="card-link" onclick="selectRole('owner')">
+            Build My Business <span>→</span>
+          </button>
+        </article>
+
+        <article class="choice-card">
+          <div class="card-icon">⌕</div>
+          <span class="card-tag">DISCOVER & SHOP</span>
+          <h3>I'm a Customer</h3>
+          <p>Explore shops, discover products, and find something you love.</p>
+          <button class="card-link" onclick="selectRole('customer')">
+            Explore Shops <span>→</span>
+          </button>
+        </article>
+      </div>
+
+      <div class="auth-line">
+        Already have an account?
+        <button onclick="showSignIn()">Sign In</button>
+      </div>
+
+      <p id="message" class="message" aria-live="polite"></p>
+    </section>
+
+    <section class="features-section" id="features">
+      <div class="section-label">MADE FOR YOUR AMBITION</div>
+      <h2>Everything you need.<br><span class="gold-text">One powerful platform.</span></h2>
+
+      <div class="features-grid">
+        <article class="feature">
+          <span>✧</span>
+          <h3>Your Online Shop</h3>
+          <p>Present your brand and products in your own storefront.</p>
+        </article>
+        <article class="feature">
+          <span>◇</span>
+          <h3>Product Management</h3>
+          <p>Add, edit, and organise your product catalogue.</p>
+        </article>
+        <article class="feature">
+          <span>↗</span>
+          <h3>Order Tracking</h3>
+          <p>Keep your customer orders organised in one place.</p>
+        </article>
+        <article class="feature" id="about">
+          <span>✦</span>
+          <h3>Business Guide</h3>
+          <p>Get helpful ideas as you plan your next business move.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand" href="#"><span class="brand-icon">K</span> KME BIZPILOT</a>
+    <p>Designed with ambition by KME Luxury Designs.</p>
+    <span>© 2026 KME BizPilot</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
